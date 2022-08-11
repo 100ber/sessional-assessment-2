@@ -30,7 +30,7 @@
 <textarea id="ta" placeholder="Please provide some description of image ...">
 </textarea><br><br>
 
-<button class="btn btn-success btn-lg" onclick="sub()">Submit</button>
+<button class="btn btn-success btn-lg" onclick="add('form.txt')">Submit</button>
 
 
 
