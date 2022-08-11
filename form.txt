@@ -1,0 +1,40 @@
+<form id="form">
+<div align="center">
+<fieldset><br>
+	<legend>ADD Your Image</legend><br><br>
+<input type="text" name="fname" class="hh wd" placeholder="First Name" required> &nbsp;
+
+<input type="text" name="lname" class="hh wd" placeholder="Last Name">
+<br>
+
+
+<input type="email" name="em" class="hh wd" placeholder="Email" required > &nbsp;
+<input type="phone" name="ph" class="hh wd" placeholder="Phone Number" required>
+<br>
+
+<!-- <label for="img">Select Image :</label>
+<input type="file" name="img" class="hh ewd" id="file" placeholder="choose image" required>&nbsp; -->
+
+	<input type="file" class="form-control hh" id="file" aria-describedby="emailHelp" required>
+ 
+
+<label for="cc">Choose a category :</label>
+<select name="category" class="hh ewd">
+	<option value="">Portrait</option>
+	<option value="">Landscape</option>
+	<option value="">Historic</option>
+	<option value="">Color</option>
+</select>
+<br>
+
+<textarea id="ta" placeholder="Please provide some description of image ...">
+</textarea><br><br>
+
+<button class="btn btn-success btn-lg" onclick="sub()">Submit</button>
+
+
+
+
+</fieldset>
+</div>
+</form>
