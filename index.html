@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Picture Gallery</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <nav class = "navbar navbar-expand-lg navbar-dark bg-dark " id="hite">
+    
+	<nav class = "navbar navbar-expand-lg navbar-dark bg-dark " id="hite">
 
 
 		<a class="navbar-brand " href="#">
-			<img src="https://diylogodesigns.com/wp-content/uploads/2016/04/Microsoft-Logo-icon-png-Transparent-Background-768x768.png" alt="" width="80" height="80" class="d-inline-block align-text-top">
+			<img src="ms.png" alt="" width="80" height="80" class="d-inline-block align-text-top">
 		  </a>
 
 
@@ -26,10 +29,10 @@
 	 
 		<ul class = "navbar-nav ms-auto pad2">
 			<li class = "nav-item pad">
-				<a class = "nav-link" href="">Albums</a>
+				<a class = "nav-link" href="" >Albums</a>
 			</li>
 			<li class = "nav-item pad">
-				<a class = "nav-link" href="">Blog</a>
+				<a class = "nav-link" onclick="add('form.txt')">Blog</a>
 			</li>
 			<li class = "nav-item pad">
 				<a class = "nav-link" href="">Contact</a>
@@ -38,72 +41,277 @@
 		</div>
 	</nav>
 	
+<div id="d1">
+
+<div class="container home">
 
 
+	<div class="row">
+
+		<div class="col" align="center">
+		<h1 id="he">ALBUMS</h1>
+		</div>
+		
+		
+		</div>
+
+<br>
+<div class="row">
+
+<div class="col-lg-6 h2 cl" align="center">
+<a onclick="show(0)"><img src="history.jpg" height="85%"><br>
+History</a>
+</div>
+
+<div class="col-lg-6 h3 cl" align="center"> <a onclick="show(100)"><img src="modern.jpg" height="85%"><br>Modern Times</a></div>
+
+</div>
 
 
+<div class="row">
 
-
-
-
-
-
-
-
-
-
-
-	//foot
+	<div class="col-lg-6 h4 cl" align="center">
+		<a onclick="show(200)"><img src="ls.jpg" height="85%" width="94%"><br>
+			Landscape</a>
 	
-	<div id="foot" align="center">
-		<div>
-				© 2022 All rights reserved . This is a Photo Gallery Application prototype made by
-				Saurabh(2010992088) from 3rd year CSE .
-				<br><br>
-				</div>
-		
-				<div>
-				<ul id="ul">
-		
-		<li class="fli"><a href="#">About</a></li>
-		<li class="fli"><a href="#">Blog</a></li>
-		<li class="fli"><a href="#">Form</a></li>
-		
-		
-				</ul>
-				</div>
-		
-			</div>
-		
-			<div id="socmed">
-		
-				<img src="C:\Users\S00da\OneDrive\Documents\fnd project\twitter.png" height="50px" >
-				<img src="C:\Users\S00da\OneDrive\Documents\fnd project\ig.png" height="50px">
-				<img src="C:\Users\S00da\OneDrive\Documents\fnd project\fb.png" height="50px" >
-		
-		
-		<span id="hid">HAPPY INDEPENDENCE DAY</span>
-		
-			</div>
+	</div>
+	
+	<div class="col-lg-6 h4 cl" align="center">
+		<a onclick="show(300)"><img src="tiger.jpg" height="85%"><br>
+			Wildlife</a>
+	</div>
+	
+	</div>
 
-    <style>
-        .pad2{
-            padding-right:5%;
-            height: 100%;
-        }
-        
-        .pad{
-            padding: 0px 30px;
-            padding-top: 8%;
-            height: 100px;
-        }
-        
-        #navbarSupportedContent{
-        height: 100%;
-        }
-        
-        
-        
-        </style>
+
+
+
+
+
+<div class="row ">
+
+	<div class="col-lg-6 h5 h6 cl" align="center">
+		<a onclick="show(500)"><img src="art.jpg" height="85%" width="94%"><br>
+			<h3>Art</h3></a>
+	</div>
+	
+	<div class="col-lg-6 h5 h6 cl" align="center"><a onclick="show(600)"><img src="arch.jpg" height="85%" width="94%" ><br>
+		<h3>Architecture</h3></a></div>
+	
+	</div>
+
+
+</div>
+
+</div>
+
+
+	<div id="foot" align="center">
+<div>
+		© 2022 All rights reserved . This is a Photo Gallery Application prototype made by
+		Saurabh(2010992088) from 3rd year CSE .
+		<br><br>
+		</div>
+
+		<div>
+		<ul id="ul">
+
+<li class="fli"><a href="#"><span class="or">Ab</span><span class="w">o</span><span class="gr">ut</span></a></li>
+<li class="fli"><a href="#">Blog</a></li>
+<li class="fli"><a href="#">Form</a></li>
+
+
+		</ul>
+		</div>
+
+	</div>
+
+	<div id="socmed">
+
+		<img src="twitter.png" height="50px" >
+		<img src="ig.png" height="50px">
+		<img src="fb.png" height="50px" >
+
+
+<span id="hid">HAPPY INDEPENDENCE DAY</span>
+
+	</div>
+<style>
+.pad2{
+	padding-right:5%;
+	height: 100%;
+}
+
+.pad{
+	padding: 0px 30px;
+	padding-top: 8%;
+	height: 100px;
+}
+
+#navbarSupportedContent{
+height: 100%;
+}
+
+#he{
+	color: rgb(165, 171, 174);
+}
+
+.h4{
+	background-color: orange;
+	height: 400px;
+}
+
+.h5{
+	/* background-color: grey; */
+	height: 400px;
+}
+
+.h6{
+	background-image: url("https://th.bing.com/th/id/R.252488cfb22154496a8dd8be0ffecc99?rik=84fxC6%2bAS%2fuA1g&riu=http%3a%2f%2fwww.wallpapermaiden.com%2fimage%2f2016%2f08%2f15%2fviolet-gradient-abstract-4335.png&ehk=lGqII47LUN0p9GN1taBdr22wRC%2fw9GJ5mEQqv4%2fnJlE%3d&risl=&pid=ImgRaw&r=0");
+
+}
+
+#foot{
+	height:100%;
+	background-color: blueviolet;
+	/* margin-top: 100%; */
+	color: whitesmoke;
+	padding: 1% 3%;
+	padding-bottom: 0.5%;
+}
+
+.cl{
+	color: black;
+}
+
+#ul{
+	list-style-type: none;
+}
+
+.fli{
+	display: inline;
+	padding: 0% 1%;
+	font-size: 15px;
+}
+
+.fli > a{
+	text-decoration: none;
+	color: rgb(49, 45, 45);
+}
+
+.fli > a:hover{
+	color: yellowgreen;
+}
+
+#socmed{
+	background-image: linear-gradient(to bottom,orange,white,green);
+	color: rgb(22, 22, 96);
+}
+
+#hid{
+	padding-left: 65%;
+	color: rgb(22, 22, 96);
+}
+
+.home{
+	background-color: black;
+	margin:0px;
+	margin-right: 0px;
+	padding: 0% 0%;
+	padding-right: 0px;
+}
+
+.hh{
+	height:40px;
+	margin: 10px;
+}
+
+.wd{
+	width: 40%;
+}
+
+.ewd{
+	width: 20%;
+}
+
+#file{
+	width:84%;
+}
+
+
+fieldset{
+	display: block;
+	border : 5px solid black;
+	height: 100%;
+	padding: 1% 10%;
+}
+
+/* #form{
+	padding: 0px 10%;
+} */
+
+#ta{
+	height: 100px;
+	width: 80%
+}
+
+.or :hover{
+	color:orangered;
+}
+
+.o:hover{
+	color: white;
+
+}
+
+.gr :hover{
+	color: green;
+}
+
+body{
+	background-color: black;
+	color: rgb(186, 197, 207);
+}
+
+.container{
+	max-width: 100%;
+}
+
+
+.h2{
+	background-color: yellow;
+	height: 400px;
+}
+
+.h3{
+	background-color: rgb(99, 47, 255);
+	height: 400px;
+}
+
+
+.row{
+	width:100%;
+	padding: 0px 5%;
+}
+
+.col{
+	width: 100%;
+}
+
+
+#foot{
+	background-image: url("https://th.bing.com/th/id/R.252488cfb22154496a8dd8be0ffecc99?rik=84fxC6%2bAS%2fuA1g&riu=http%3a%2f%2fwww.wallpapermaiden.com%2fimage%2f2016%2f08%2f15%2fviolet-gradient-abstract-4335.png&ehk=lGqII47LUN0p9GN1taBdr22wRC%2fw9GJ5mEQqv4%2fnJlE%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.mar{
+	margin-bottom: 10px;
+}
+</style>
+
+
+
 </body>
+
+
+
 </html>
