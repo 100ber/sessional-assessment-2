@@ -314,7 +314,113 @@ body{
 
 
 </body>
+<script>
+    var c=document.getElementById("d1");
+	
 
+		function show(a,b){
+			c.innerHTML="<br>";
+			var hpar=document.createElement("div");
+			hpar.className+="row mar";
+			var hch=document.createElement("div");
+			hch.className+="col";
+			hch.align="center";
+			var hh=document.createElement("h1");
+			hh.className+="he";
+			hh.innerHTML=b;
+			hch.appendChild(hh);
+			hpar.appendChild(hch);
+			c.appendChild(hpar);
+		
+				
+					var a1=document.createElement("a");
+					if(a%10!=0){
+						show2(a+25,b,a1,1);
+						a1.addEventListener("click",show.bind('click',a-25,b));
+		
+					}
+					else{
+						show2(a,b,a1,0);
+			a1.addEventListener("click",show.bind('click',a+25,b));}
+					var hh2=document.createElement("h1");
+			hh2.align="center";
+			hh2.appendChild(a1);
+			c.appendChild(hh2);
+
+				}
+		
+
+
+		// function sub(){
+		// 	alert("Thank You ");
+		// }
+
+
+		function add(s){
+			var xhr = new XMLHttpRequest();
+			//console.log(xhr);
+			xhr.onreadystatechange = function(){
+				if(this.readyState == 4 && this.status == 200){
+					var data=this.responseText;
+		
+					c.innerHTML=data;
+					
+					
+				}}
+				xhr.open("GET",s);
+				xhr.send();
+		}
+
+
+
+
+
+
+
+
+		function show2(a,b,a1,d){
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function(){
+				if(this.readyState == 4 && this.status == 200){
+					var data=this.responseText;
+					var obj=JSON.parse(data);
+					var par=document.createElement("div");
+						par.className+="row mar";
+					for(var i=a;i<a+24;i++){
+						// var node=document.createElement("h1");
+						// node.innerHTML=obj[i].url;
+						if((i-a)%6==0 && i-a!=0){
+							var par=document.createElement("div");
+						par.className+="row mar";
+						}
+						var ch=document.createElement("div");
+						ch.className+="col-2";
+                        var node=document.createElement("img");
+                        //node.src=obj[i].url;
+                        node.src=obj[i].thumbnailUrl;
+						node.title=obj[i].title;
+						ch.appendChild(node);
+						par.appendChild(ch);
+						if(((i+1)-a)%6==0 && i-a!=0){
+							c.appendChild(par);
+						}
+					}
+					if(d==0){
+						a1.innerHTML=">";
+					}
+					else{
+						a1.innerHTML="<";
+					}
+
+				}}
+				xhr.open("GET","https://jsonplaceholder.typicode.com/photos?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-09");
+				xhr.send();
+				
+			
+			
+		}
+    
+</script>
 
 
 </html>
