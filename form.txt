@@ -1,7 +1,7 @@
 <form id="form">
 <div align="center">
 <fieldset><br>
-	<legend>ADD Your Image</legend><br><br>
+	<legend>Add Image</legend><br><br>
 <input type="text" name="fname" class="hh wd" placeholder="First Name" required> &nbsp;
 
 <input type="text" name="lname" class="hh wd" placeholder="Last Name">
