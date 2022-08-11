@@ -1,0 +1,59 @@
+<div class="container home">
+
+
+	<div class="row">
+
+		<div class="col" align="center">
+		<h1 class="he">ALBUMS</h1>
+		</div>
+		
+		
+		</div>
+
+<br>
+<div class="row">
+
+<div class="col-lg-6 h2 cl" align="center">
+<a onclick="show(0,'Album : History')"><img src="history.jpg" height="85%"><br>
+History</a>
+</div>
+
+<div class="col-lg-6 h3 cl" align="center"> <a onclick="show(100,'Album : Modern')"><img src="modern.jpg" height="85%"><br>Modern Times</a></div>
+
+</div>
+
+
+<div class="row">
+
+	<div class="col-lg-6 h4 cl" align="center">
+		<a onclick="show(200,'Album : Landscape')"><img src="ls.jpg" height="85%" width="94%"><br>
+			Landscape</a>
+	
+	</div>
+	
+	<div class="col-lg-6 h4 cl" align="center">
+		<a onclick="show(300,'Album : Wildlife')"><img src="tiger.jpg" height="85%"><br>
+			Wildlife</a>
+	</div>
+	
+	</div>
+
+
+
+
+
+
+<div class="row ">
+
+	<div class="col-lg-6 h5 h6 cl" align="center">
+		<a onclick="show(500,'Album : Art')"><img src="art.jpg" height="85%" width="94%"><br>
+			<h3>Art</h3></a>
+	</div>
+	
+	<div class="col-lg-6 h5 h6 cl" align="center"><a onclick="show(600,'Album : Architecture')"><img src="arch.jpg" height="85%" width="94%" ><br>
+		<h3>Architecture</h3></a></div>
+	
+	</div>
+
+
+</div>
