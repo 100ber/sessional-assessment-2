@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,33 +13,40 @@
 	<nav class = "navbar navbar-expand-lg navbar-dark bg-dark " id="hite">
 
 
-		<a class="navbar-brand " href="#">
+		<a class="navbar-brand " onclick="add('home.txt')">
 			<img src="ms.png" alt="" width="80" height="80" class="d-inline-block align-text-top">
 		  </a>
 
 
 
-		<a class = "navbar-brand" href="#">Photo Gallery</a>
+		<a class = "navbar-brand" onclick="add('home.txt')">Photo Gallery</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContentx">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		
 	 
 		<ul class = "navbar-nav ms-auto pad2">
 			<li class = "nav-item pad">
-				<a class = "nav-link" href="" >Albums</a>
+				<a class = "nav-link" onclick="add('home.txt')" >Albums</a>
 			</li>
 			<li class = "nav-item pad">
-				<a class = "nav-link" onclick="add('form.txt')">Blog</a>
+				<a class = "nav-link" href="#">Blog</a>
 			</li>
 			<li class = "nav-item pad">
-				<a class = "nav-link" href="">Contact</a>
+				<a class = "nav-link" onclick="add('form.txt')">Add Image</a>
+			</li>
+			<li class = "nav-item pad">
+				<a class = "nav-link" href="#foot">Contact</a>
 			</li>
 		</ul>
 		</div>
 	</nav>
 	
+ 
+
+
+
 <div id="d1">
 
 <div class="container home">
@@ -49,7 +55,7 @@
 	<div class="row">
 
 		<div class="col" align="center">
-		<h1 id="he">ALBUMS</h1>
+		<h1 class="he">ALBUMS</h1>
 		</div>
 		
 		
@@ -59,11 +65,11 @@
 <div class="row">
 
 <div class="col-lg-6 h2 cl" align="center">
-<a onclick="show(0)"><img src="history.jpg" height="85%"><br>
+<a onclick="show(0,'Album : History')"><img src="history.jpg" height="85%"><br>
 History</a>
 </div>
 
-<div class="col-lg-6 h3 cl" align="center"> <a onclick="show(100)"><img src="modern.jpg" height="85%"><br>Modern Times</a></div>
+<div class="col-lg-6 h3 cl" align="center"> <a onclick="show(100,'Album : Modern')"><img src="modern.jpg" height="85%"><br>Modern Times</a></div>
 
 </div>
 
@@ -71,13 +77,13 @@ History</a>
 <div class="row">
 
 	<div class="col-lg-6 h4 cl" align="center">
-		<a onclick="show(200)"><img src="ls.jpg" height="85%" width="94%"><br>
+		<a onclick="show(200,'Album : Landscape')"><img src="ls.jpg" height="85%" width="94%"><br>
 			Landscape</a>
 	
 	</div>
 	
 	<div class="col-lg-6 h4 cl" align="center">
-		<a onclick="show(300)"><img src="tiger.jpg" height="85%"><br>
+		<a onclick="show(300,'Album : Wildlife')"><img src="tiger.jpg" height="85%"><br>
 			Wildlife</a>
 	</div>
 	
@@ -91,11 +97,11 @@ History</a>
 <div class="row ">
 
 	<div class="col-lg-6 h5 h6 cl" align="center">
-		<a onclick="show(500)"><img src="art.jpg" height="85%" width="94%"><br>
+		<a onclick="show(500,'Album : Art')"><img src="art.jpg" height="85%" width="94%"><br>
 			<h3>Art</h3></a>
 	</div>
 	
-	<div class="col-lg-6 h5 h6 cl" align="center"><a onclick="show(600)"><img src="arch.jpg" height="85%" width="94%" ><br>
+	<div class="col-lg-6 h5 h6 cl" align="center"><a onclick="show(600,'Album : Architecture')"><img src="arch.jpg" height="85%" width="94%" ><br>
 		<h3>Architecture</h3></a></div>
 	
 	</div>
@@ -116,9 +122,11 @@ History</a>
 		<div>
 		<ul id="ul">
 
-<li class="fli"><a href="#"><span class="or">Ab</span><span class="w">o</span><span class="gr">ut</span></a></li>
+<li class="fli"><a href="#">Privacy Policy</a></li>
+<li class="fli"><a href="#">About</a></li>
 <li class="fli"><a href="#">Blog</a></li>
-<li class="fli"><a href="#">Form</a></li>
+
+
 
 
 		</ul>
@@ -128,9 +136,9 @@ History</a>
 
 	<div id="socmed">
 
-		<img src="twitter.png" height="50px" >
-		<img src="ig.png" height="50px">
-		<img src="fb.png" height="50px" >
+		<a href="www.twitter.com" target="__blank"><img src="twitter.png" height="50px" ></a>&nbsp;&nbsp;
+		<a href="www.instagram.com" target="__blank"><img src="ig.png" height="50px"></a>
+		<a href="www.facebook.com" target="__blank"><img src="fb.png" height="50px" ></a>
 
 
 <span id="hid">HAPPY INDEPENDENCE DAY</span>
@@ -140,6 +148,10 @@ History</a>
 .pad2{
 	padding-right:5%;
 	height: 100%;
+}
+
+#form{
+	background-color: azure;
 }
 
 .pad{
@@ -152,7 +164,8 @@ History</a>
 height: 100%;
 }
 
-#he{
+
+.he{
 	color: rgb(165, 171, 174);
 }
 
@@ -173,7 +186,7 @@ height: 100%;
 
 #foot{
 	height:100%;
-	background-color: blueviolet;
+	background-color: rgb(67, 23, 65);
 	/* margin-top: 100%; */
 	color: whitesmoke;
 	padding: 1% 3%;
@@ -196,7 +209,7 @@ height: 100%;
 
 .fli > a{
 	text-decoration: none;
-	color: rgb(49, 45, 45);
+	color: rgb(164, 200, 212);
 }
 
 .fli > a:hover{
@@ -255,22 +268,14 @@ fieldset{
 	width: 80%
 }
 
-.or :hover{
-	color:orangered;
-}
 
-.o:hover{
-	color: white;
-
-}
-
-.gr :hover{
-	color: green;
-}
 
 body{
 	background-color: black;
-	color: rgb(186, 197, 207);
+	/* color: rgb(186, 197, 207); */
+	 user-select: none;
+	 -webkit-user-select: none;
+	 -ms-user-select: none;
 }
 
 .container{
@@ -299,9 +304,7 @@ body{
 }
 
 
-#foot{
-	background-image: url("https://th.bing.com/th/id/R.252488cfb22154496a8dd8be0ffecc99?rik=84fxC6%2bAS%2fuA1g&riu=http%3a%2f%2fwww.wallpapermaiden.com%2fimage%2f2016%2f08%2f15%2fviolet-gradient-abstract-4335.png&ehk=lGqII47LUN0p9GN1taBdr22wRC%2fw9GJ5mEQqv4%2fnJlE%3d&risl=&pid=ImgRaw&r=0");
-}
+
 
 .mar{
 	margin-bottom: 10px;
