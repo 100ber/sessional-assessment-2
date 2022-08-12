@@ -20,10 +20,13 @@
 
 <label for="cc">Choose a category :</label>
 <select name="category" class="hh ewd">
-	<option value="">Portrait</option>
-	<option value="">Landscape</option>
-	<option value="">Historic</option>
-	<option value="">Color</option>
+	<option value="Portrait">Portrait</option>
+	<option value="Landscape">Landscape</option>
+	<option value="Historic">Historic</option>
+	<option value="Color">Color</option>
+	<option value="Modern">Modern</option>
+	<option value="Art">Art</option>
+	<option value="Architecture">Architecture</option>
 </select>
 <br>
 
