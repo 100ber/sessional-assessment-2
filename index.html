@@ -395,11 +395,16 @@ body{
 						}
 						var ch=document.createElement("div");
 						ch.className+="col-2";
+						var anch=document.createElement("a");
+						anch.target="__blank";
                         var node=document.createElement("img");
                         //node.src=obj[i].url;
                         node.src=obj[i].thumbnailUrl;
+						anch.href=obj[i].url;
+						
 						node.title=obj[i].title;
-						ch.appendChild(node);
+						anch.appendChild(node);
+						ch.appendChild(anch);
 						par.appendChild(ch);
 						if(((i+1)-a)%6==0 && i-a!=0){
 							c.appendChild(par);
